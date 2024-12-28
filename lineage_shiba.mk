@@ -6,7 +6,7 @@
 
 # Inherit some common stuff
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/xperience/config/common.mk)
 
 # Inherit device configuration
 DEVICE_CODENAME := shiba
@@ -67,6 +67,8 @@ TARGET_INCLUDE_PIXEL_EUICC := true
 TARGET_INCLUDE_CARRIER_SERVICES := true
 
 # A bunch of Pixel stuff
+TARGET_IS_PIXEL := true
+TARGET_PIXEL_STAND_SUPPORTED := true
 USE_PIXEL_CHARGER := true
 TARGET_SUPPORTS_DREAMLINER := true
 TARGET_SUPPORTS_GOOGLE_BATTERY := true
@@ -83,9 +85,11 @@ BUILD_GOOGLE_CONTACTS := true
 BUILD_GOOGLE_DIALER := true
 BUILD_GOOGLE_MESSAGE := true
 
-# Mist OS Flags
-MIST_BUILD_TYPE := OFFICIAL
-MISTOS_MAINTAINER := GamerBoy1234294
+# The XPerience Project flags
+XPERIENCE_BATTERY := "4575 mAh"
+XPERIENCE_CHIPSET := "Google Tensor G3"
+XPERIENCE_DISPLAY := "2400x1080"
+XPERIENCE_MAINTAINER := "Matthew Witherell"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
