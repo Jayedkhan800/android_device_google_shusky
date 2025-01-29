@@ -19,7 +19,7 @@ $(call inherit-product, $(DEVICE_PATH)/$(DEVICE_CODENAME)/device-lineage.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 8 Pro
-PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
+PRODUCT_NAME := voltage_$(DEVICE_CODENAME)
 
 # UDFPS support
 TARGET_HAS_UDFPS := true
@@ -76,16 +76,6 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_GOOGLE_CAMERA := true
 TARGET_GOOGLE_CAMERA_LARGE_RAM := true
 TARGET_PIXEL_EXPERIENCE_2023 := true
-
-# GMS
-WITH_GMS := true
-BUILD_GOOGLE_CONTACTS := true
-BUILD_GOOGLE_DIALER := true
-BUILD_GOOGLE_MESSAGE := true
-
-# Mist OS Flags
-MIST_BUILD_TYPE := OFFICIAL
-MISTOS_MAINTAINER := GamerBoy1234294
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2992
